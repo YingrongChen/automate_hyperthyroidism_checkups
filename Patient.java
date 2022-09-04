@@ -14,6 +14,7 @@ public class Patient {
 	private ArrayList<Double> weight;
 	private ArrayList<Integer> heartRate;
 	private ArrayList<Boolean> medCompliance;
+//skaldjla:wq
 
 	//clinic features;
 	//thyroid function tests
