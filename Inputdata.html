@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+    <meta charset="utf-8">
+    <title>My Thyroid Data</title>
+    <meta name="viewport" content="width=device-width initial-scale = 1">
+    <meta name="author" content="Yingrong Chen & Sichen Liu">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <h1>Input My Thyroid Data</h1>	
+    <form>		
+        <fieldset>
+            <legend>Basic Information</legend>			  
+            <label for ="Name">Name:</label>		  
+            <input type = "text" name = "Name" id = "Name" required><br/>
+
+            
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="Gender" value="male"><br/>		
+            <label for="male">Male</label>				
+
+            <label for = "age">Age: </label>
+            <input type="number" id="age" name="age"/><br/>
+
+            <label for = "smoke">Smoke?</label>
+            <input type="checkbox" id="smoke" name="smoke"/> <br/>
+
+            <label for = "pregnant">Pregnant?</label>
+            <input type="checkbox" id="pregnant" name="pregnant"/><br/>		
+
+            <section id="preg">
+                <label for = "trimester">Trimester: </label>
+                <input type="number" id="trimester" name="trimester"/><br/>
+            </section>
+		</fieldset>
+
+        <fieldset>
+            <legend>Thyroid Function Tests</legend>			  
+            <label for ="TSH">TSH:</label>		  
+            <input type = "number" name = "TSH" id = "TSH" required><br/>
+            <label for = "T4">T4:</label>		  
+            <input type = "number" name = "T4" id = "T4" required><br/>
+            <label for = "T3">T3:</label>		  
+            <input type = "number" name = "T3" id = "T3" required><br/>
+            <label for = "TRAb">TRAb Positive?</label>
+            <input type="checkbox" id="TRAb" name="TRAb"/> <br/>
+            <label for = "TSI">TSI:</label>		  
+            <input type = "number" name = "TSI" id = "TSI" required><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Daily Tracker</legend>	
+            <label for = "onMedication">Taking Medication?</label>
+            <input type="checkbox" id="onMedication" name="onMedication"/><br/>
+            
+            <section id="med">
+                <label for = "medCompliance">How many Medication have you missed? </label>
+                <input type="number" id="medCompliance" name="medCompliance"/><br/>
+            </section>
+
+            <label for = "heartRate">Average Heart Rate:</label>
+            <input type="number" id="heartRate" name="heartRate"/> <br/>
+            <label for = "weight">Weight:</label>		  
+            <input type = "number" name = "weight" id = "weight" required><br/>
+        </fieldset>
+        <input type = "submit" value = "Verify"/>	
+    </form>
+</body>
+
+
+</html>

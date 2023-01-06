@@ -1,0 +1,16 @@
+body{
+	background:linear-gradient(#ffffff 0%, #00b7ea34 100%); 
+	margin: 5%;
+}
+
+fieldset{
+    margin: 2%;
+}
+
+#preg{
+    display: none;
+}
+
+#med{
+    display: none;
+}
