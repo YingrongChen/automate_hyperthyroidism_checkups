@@ -29,7 +29,7 @@
             <input type="checkbox" id="smoke" name="smoke"/> <br/>
 
             <label for = "pregnant">Pregnant?</label>
-            <input type="checkbox" id="pregnant" name="pregnant"/><br/>		
+            <input type="checkbox" id="pregnant" name="pregnant" onchange= "pregFunction()"/><br/>		
 
             <section id="preg">
                 <label for = "trimester">Trimester: </label>
@@ -38,35 +38,47 @@
 		</fieldset>
 
         <fieldset>
-            <legend>Thyroid Function Tests</legend>			  
-            <label for ="TSH">TSH:</label>		  
-            <input type = "number" name = "TSH" id = "TSH" required><br/>
-            <label for = "T4">T4:</label>		  
-            <input type = "number" name = "T4" id = "T4" required><br/>
-            <label for = "T3">T3:</label>		  
-            <input type = "number" name = "T3" id = "T3" required><br/>
-            <label for = "TRAb">TRAb Positive?</label>
-            <input type="checkbox" id="TRAb" name="TRAb"/> <br/>
-            <label for = "TSI">TSI:</label>		  
-            <input type = "number" name = "TSI" id = "TSI" required><br/>
-        </fieldset>
-
-        <fieldset>
             <legend>Daily Tracker</legend>	
-            <label for = "onMedication">Taking Medication?</label>
-            <input type="checkbox" id="onMedication" name="onMedication"/><br/>
-            
-            <section id="med">
-                <label for = "medCompliance">How many Medication have you missed? </label>
-                <input type="number" id="medCompliance" name="medCompliance"/><br/>
-            </section>
 
             <label for = "heartRate">Average Heart Rate:</label>
             <input type="number" id="heartRate" name="heartRate"/> <br/>
+
             <label for = "weight">Weight:</label>		  
-            <input type = "number" name = "weight" id = "weight" required><br/>
+            <input type = "number" name = "weight" id = "weight"><br/>
+
+            <label for = "onMedication">Taking Medication?</label>
+            <input type="checkbox" id="onMedication" name="onMedication" onchange= "medFunction()"/><br/>
+            
+            <section id="med">
+                <label for = "medPrescription">How many medications are prescripted for you per week? </label>
+                <input type="number" id="medPrescription" name="medPrescription"/><br/>
+                <label for = "medCompliance">How many medications have you missed? </label>
+                <input type="number" id="medCompliance" name="medCompliance"/><br/>
+            </section>
+
         </fieldset>
-        <input type = "submit" value = "Verify"/>	
+
+        <fieldset>
+            <legend>Thyroid Function Tests</legend>	
+            <label for = "TFTtest">Do you have a TFT test result?</label>
+            <input type="checkbox" id="TFTtest" name="TFTtest" onchange= "TFTFunction()"/><br/>		 
+            <section id="TFT">
+                <label for ="TSH">TSH:</label>		  
+                <input type = "number" name = "TSH" id = "TSH"><br/>
+                <label for = "T4">T4:</label>		  
+                <input type = "number" name = "T4" id = "T4"><br/>
+                <label for = "T3">T3:</label>		  
+                <input type = "number" name = "T3" id = "T3"><br/>
+                <label for = "TRAb">TRAb Positive?</label>
+                <input type="checkbox" id="TRAb" name="TRAb"/> <br/>
+                <label for = "TSI">TSI:</label>		  
+                <input type = "number" name = "TSI" id = "TSI"><br/>
+            </section> 
+
+        </fieldset>
+
+        <input type = "submit" value = "Verify" onclick="return Verify()"/>	
+
     </form>
 </body>
 

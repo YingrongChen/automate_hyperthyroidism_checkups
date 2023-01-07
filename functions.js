@@ -1,38 +1,32 @@
-function setDate(){
-    document.getElementById('date').innerHTML=Date();
-}
-function closeMe(){
-    // Find the element
-         x=document.getElementById("demo");
-     //Option 1: Change the style attribute directly
-         x.style.display="none";
-}
-
-function openMe(){
-    // Find the element
-    x=document.getElementById("demo");
-    //Option 1: Change the style attribute directly
-    x.style.display="block";
-    
-    //Option 2: Change the class
-    //x.className="open";
-}
-
-function showProperties(element){
-    document.getElementById('message').innerHTML = element.alt;
-}
-
-function hello(){
-    var name = prompt("What is your name?")
-    if (name.length != 0){
-        document.write("Hello " +  name)
+function pregFunction(){
+    if(document.getElementById('pregnant').checked){
+        document.getElementById('preg').style.display = "block";
+    } else{
+        document.getElementById('preg').style.display = "none";
     }
-    else
-    document.write("Feeling shy?")
+}
+
+function medFunction(){
+    if(document.getElementById('onMedication').checked){
+        document.getElementById('med').style.display = "block";
+    } else{
+        document.getElementById('med').style.display = "none";
+    }
+}
+
+function TFTFunction(){
+    if(document.getElementById('TFTtest').checked){
+        document.getElementById('TFT').style.display = "block";
+    } else{
+        document.getElementById('TFT').style.display = "none";
+    }
+}
+
+function Verify(){
+
 }
 
 function average(){
-    var grades= [2, 5, , , 9, 8, , 8];
     var sum = 0;
     var count = 0;
     if (grades.length > 0){
